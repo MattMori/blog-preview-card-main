@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  overflow-x: hidden; 
+}
+
+body {
+  background-color: #f5d04e;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fffeff;
+  border: #1c1300 solid 1px;
+  box-shadow: 10px 10px 1px #1c1300;
+  border-radius: 20px;
+  margin: 6% auto;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 1%;
+}
+
+.container img {
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.conteudo {
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 1%;
+}
+
+.conteudo h3 {
+  background-color: #f5d04e;
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  width: max-content;
+}
+
+.conteudo h1 {
+  font-size: 3vh;
+  font-weight: bolder;
+}
+
+.conteudo h1:hover {
+  color: #f5d04e;
+  cursor: pointer;
+}
+
+.conteudo p {
+  color: #6b6b6b;
+  font-size: 18px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+.perfil img {
+  width: 10%;
+  padding-right: 10px;
+}
+.attribution {
+  bottom: 0;
+  font-size: 1rem;
+  color: #1c1300;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 80%;
+    padding: 5%;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .conteudo p {
+    font-size: 20px;
+  }
+
+  .perfil img {
+    width: 40px; /* Ajusta o tamanho da imagem */
+    margin-bottom: 10px; /* Espaçamento entre imagem e texto */
+  }
+}
+
+/* Para telas muito pequenas (até 480px, smartphones) */
+@media (max-width: 480px) {
+  .conteudo h3 {
+    font-size: 14px; /* Reduz o tamanho do subtítulo */
+    padding: 3px 7px; /* Ajusta o padding */
+  }
+
+  .conteudo h1 {
+    font-size: 18px; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .attribution {
+    font-size: 0.8rem; /* Diminui a fonte da atribuição */
+  }
+}
